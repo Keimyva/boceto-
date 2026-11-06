@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Cines de Costa Rica · deleFOCO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="top">
+        <div class="w nav">
+            <a class="logo" href="#" id="logo" title="Ir a la cartelera de deleFOCO"><i>logo</i>deleFOCO</a>
+            <div class="nav-right">
+                <nav class="links" aria-label="Principal">
+                    <a href="#inicio">Cines</a>
+                    <a href="#populares">Populares</a>
+                    <a href="#comentarios">Comentarios</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+
+                <!-- Botón de idioma interactivo (Escritorio) -->
+                <button class="lang-btn" id="langToggle" aria-label="Cambiar idioma">
+  <span class="lang-es active">ES</span> / <span class="lang-en">EN</span>
+</button>
+
+                <button class="ib" id="th" aria-label="Cambiar entre modo claro y oscuro"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg></button>
+                <button class="ib burger" id="bg" aria-label="Abrir menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+            </div>
+        </div>
+        <div class="mob" id="mob">
+            <a href="#inicio">Cines</a>
+            <a href="#populares">Populares</a>
+            <a href="#comentarios">Comentarios</a>
+            <a href="#contacto">Contacto</a>
+            <div class="mob-lang">
+                <!-- Botón de idioma interactivo (Móvil) -->
+                <button class="lang-btn" style="width:100%; margin-top:8px;" aria-label="Cambiar idioma">
+  <span class="lang-es active">ES</span> / <span class="lang-en">EN</span>
+</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="pg" id="p-inicio">
+            <div class="hero" id="hero">
+                <div class="fl" data-d="18" style="right:20%;top:85px;transform:rotate(-5deg)"><img data-p="0" alt="The Hunger Games: Sunrise on the Reaping"></div>
+                <div class="fl" data-d="-26" style="right:11%;top:250px;transform:rotate(6deg)"><img data-p="1" alt="Godzilla Minus Zero"></div>
+                <div class="fl" data-d="34" style="right:2.5%;top:105px;transform:rotate(7deg);height:190px"><img data-p="2" alt="Hechizo: Bienvenidos a Hexe"></div>
+                <div class="w" style="position:relative">
+                    <div class="lab" style="color:var(--ac)">Cines de Costa Rica</div>
+                    <h1>Encuentre su cine, su horario y su cartelera</h1>
+                    <p>Elija el tipo de cine y llegue directo a su ubicación, horario y películas en cartelera.</p>
+                </div>
+            </div>
+            <div class="w up">
+                <div class="opts">
+                    <a class="opt" href="#comerciales">
+                        <div class="n">01</div>
+                        <h3>Cines comerciales</h3>
+                        <p>Cadenas con una o varias sucursales en todo el país.</p><span class="go">Ver cines comerciales</span></a>
+                    <a class="opt" href="#independientes">
+                        <div class="n">02</div>
+                        <h3>Cines independientes</h3>
+                        <p>Salas alternativas con programación propia.</p><span class="go">Ver cines independientes</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pg" id="p-comerciales">
+            <div class="w">
+                <div class="crumb"><a href="#inicio">Inicio</a> / Comerciales</div>
+                <div class="head">
+                    <div class="lab">Cines comerciales</div>
+                    <h2>¿Qué tipo de cine comercial busca?</h2>
+                    <p>Escoja si el cine tiene varias sucursales o una sola.</p>
+                </div>
+                <div class="opts">
+                    <a class="opt" href="#varias-sucursales">
+                        <div class="n">A</div>
+                        <h3>Con varias sucursales</h3>
+                        <p>Elija el cine y luego la sucursal que le queda mejor.</p><span class="go">Ver cines</span></a>
+                    <a class="opt" href="#una-sucursal">
+                        <div class="n">B</div>
+                        <h3>Con una sola sucursal</h3>
+                        <p>Cines comerciales con una única ubicación.</p><span class="go">Ver cines</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pg" id="p-varias-sucursales">
+            <div class="w">
+                <div class="crumb"><a href="#inicio">Inicio</a> / <a href="#comerciales">Comerciales</a> / Varias sucursales</div>
+                <div class="head">
+                    <div class="lab">Comerciales</div>
+                    <h2>Cines con varias sucursales</h2>
+                    <p>Seleccione un cine y luego su sucursal.</p>
+                </div>
+                <div class="panel">
+                    <div class="side" id="chains"></div>
+                    <div class="main" id="detail"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pg" id="p-una-sucursal">
+            <div class="w">
+                <div class="crumb"><a href="#inicio">Inicio</a> / <a href="#comerciales">Comerciales</a> / Una sola sucursal</div>
+                <div class="head">
+                    <div class="lab">Comerciales</div>
+                    <h2>Cines con una sola sucursal</h2>
+                    <p>Cada cine con su ubicación, horario y cartelera.</p>
+                </div>
+                <div class="grid" id="g-single"></div>
+            </div>
+        </section>
+
+        <section class="pg" id="p-independientes">
+            <div class="w">
+                <div class="crumb"><a href="#inicio">Inicio</a> / Independientes</div>
+                <div class="head">
+                    <div class="lab">Independientes</div>
+                    <h2>Cines independientes</h2>
+                    <p>Espacios con programación propia y mucho carácter.</p>
+                </div>
+                <div class="grid" id="g-indep"></div>
+            </div>
+        </section>
+
+        <section class="dk" id="populares">
+            <div class="w">
+                <div class="head">
+                    <div class="lab">Lo más visto</div>
+                    <h2>Películas populares en los cines</h2>
+                </div>
+                <div class="pops" id="pops"></div>
+            </div>
+        </section>
+
+        <section class="sec" id="comentarios">
+            <div class="w">
+                <div class="head">
+                    <div class="lab">Comunidad</div>
+                    <h2>Comentarios sobre la página</h2>
+                </div>
+                <div class="quotes" id="quotes"></div>
+                <form class="cf" id="cform">
+                    <input id="cn" aria-label="Su nombre" placeholder="Su nombre" required>
+                    <textarea id="ct" aria-label="Su comentario" rows="3" placeholder="Deje su comentario" required></textarea>
+                    <button class="btn gold" type="submit" style="justify-self:start">Publicar comentario</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <div class="w">
+                <div style="flex:1;min-width:280px">
+                    <div class="lab" style="color:var(--ac)">Contacto</div>
+                    <h2 style="font-size:36px;margin:10px 0 14px">¿Falta un cine o hay un dato por corregir?</h2>
+                    <p style="opacity:.85;line-height:1.6;margin:0">Escríbanos y lo revisamos.</p>
+                </div>
+                <form class="c" id="mform">
+                    <input aria-label="Nombre" placeholder="Nombre" required>
+                    <input type="email" aria-label="Correo" placeholder="Correo" required>
+                    <textarea aria-label="Mensaje" rows="4" placeholder="Mensaje" required></textarea>
+                    <button class="btn gold" type="submit" id="mb">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>deleFOCO · Cines de Costa Rica</footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
